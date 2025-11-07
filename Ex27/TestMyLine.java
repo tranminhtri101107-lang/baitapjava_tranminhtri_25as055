@@ -17,7 +17,7 @@ public class TestMyLine {
         System.out.println("End: " + line1.getEnd());
 
         // Kiểm tra độ dài và góc nghiêng
-        PrintStream printf = System.out.printf("Length: %.2f%n", line1.getLength());
+        System.out.printf("Length: %.2f%n", line1.getLength());
         System.out.printf("Gradient (radians): %.2f%n", line1.getGradient());
     }
 }
