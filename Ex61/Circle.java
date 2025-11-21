@@ -1,6 +1,6 @@
 package Ex61;
 
-public class Circle {
+public class Circle extends Shape {
     protected double radius = 1;
 
     public Circle() {
@@ -18,13 +18,16 @@ public class Circle {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+    @Override
     public double getArea() {
-        return radius * radius;
+        return Math.PI * radius * radius;
     }
+    @Override
     public double getPerimeter() {
-        return 2 * radius;
+        return 2 * Math.PI * radius;
     }
+    @Override
     public String toString() {
-        return "Circle{" + "radius=" + radius + '}';
+        return "Circle[" + super.toString() + ",radius=" + radius + "]";
     }
 }

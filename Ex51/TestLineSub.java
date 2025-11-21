@@ -6,7 +6,7 @@ public class TestLineSub {
         System.out.println(l1);
         System.out.printf("Length: %.2f%n", l1.getLength());
         System.out.printf("Gradient (radian): %.2f%n", l1.getGradient());
-        
+
         Point p1 = new Point(1, 2);
         Point p2 = new Point(5, 6);
         LineSub l2 = new LineSub(p1, p2);
