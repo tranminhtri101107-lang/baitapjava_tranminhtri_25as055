@@ -1,23 +1,25 @@
-package Ex63;
-
-import Ex62.GeometricObject;
+package Ex64;
 
 public class MovablePoint implements Movable {
     int x;
     int y;
     int xSpeed;
     int ySpeed;
-    GeometricObject geometricObject;
-
-    public MovablePoint(int x, int y, int  xSpeed, int ySpeed) {
+    MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
         this.y = y;
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
-        this.geometricObject = geometricObject;
     }
+
+    @Override
     public String toString() {
-        return "MovablePoint(" + x + "," + y + ")";
+        return "MovablePoint{" +
+                "x=" + x +
+                ", y=" + y +
+                ", xSpeed=" + xSpeed +
+                ", ySpeed=" + ySpeed +
+                '}';
     }
 
     @Override
@@ -37,5 +39,6 @@ public class MovablePoint implements Movable {
 
     @Override
     public void moveRight() {
+
     }
 }
